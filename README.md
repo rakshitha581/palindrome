@@ -11,15 +11,12 @@
 STACK SEGMENT
  DW 128 DUP(?)
 STACK ENDS
-
 DATA SEGMENT
     msg1 DB 13,10,'PALINDROME$'
     msg2 DB 13,10,'NOT PALINDROME$'
 DATA ENDS
-
 CODE SEGMENT
 ASSUME CS:CODE, DS:DATA
-
 START:
     MOV AX, DATA
     MOV DS, AX         
@@ -27,21 +24,17 @@ START:
  MOV AH, 0          
     MOV BL, 10         
     DIV BL       
-
-    CMP AL, AH
+CMP AL, AH
     JNE NOTPAL       
-
 PAL:                   
     LEA DX, msg1        
     MOV AH, 09H
     INT 21H
     JMP EXIT
-
 NOTPAL:                 
     LEA DX, msg2        
     MOV AH, 09H
     INT 21H
-
 EXIT:
     MOV AH, 4CH       
     INT 21H
