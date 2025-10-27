@@ -1,12 +1,12 @@
 # palindrome  
+
 **AIM**:
-
- Write an assembly language program in 8086 to check whether a given number is a palindrome or not.
- **APPARATUS REQUIRED**
+ Write an assembly language program in 8086 to check whether a given number is a palindrome or not
  
-  personal computer with Masm software
+ **APPARATUS REQUIRED**
+   personal computer with Masm software
+ 
 ****PROGRAM**
-
 ```
 STACK SEGMENT
  DW 128 DUP(?)
@@ -45,17 +45,13 @@ NOTPAL:
 EXIT:
     MOV AH, 4CH       
     INT 21H
+CODE ENDS
+END START
 ```
 **OUTPUT**
   ![WhatsApp Image 2025-10-27 at 12 30 23_bf94e0d1](https://github.com/user-attachments/assets/97a74ca6-fb4d-4e2a-a3d4-31cd283f4d05)
   ![WhatsApp Image 2025-10-27 at 12 30 56_cc85ef72](https://github.com/user-attachments/assets/9a4dc049-b788-4033-8f32-b8b1f5121203)
   ![WhatsApp Image 2025-10-27 at 12 31 59_87a27fb7](https://github.com/user-attachments/assets/cec33cc2-19b2-453e-aa3a-a81560f5c535)
-**RESULT**
-
-Thus the assembly language program in 8086 to check whether a given number is a palindrome or not shown in output
-
-
-
-CODE ENDS
-END START
   
+**RESULT**
+Thus the assembly language program in 8086 to check whether a given number is a palindrome or not shown in output
